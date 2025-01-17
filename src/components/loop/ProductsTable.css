@@ -1,0 +1,15 @@
+.TableProducts th {
+    border: 1px solid #225;
+}
+
+.TableProducts {
+    width: 100%;
+}
+
+.TableProducts .even {
+    background-color: #f0f0f0;
+}
+
+.TableProducts .odd {
+    background-color: #fff;
+}
