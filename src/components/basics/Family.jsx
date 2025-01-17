@@ -1,15 +1,14 @@
-import React from 'react';
-import Member from './Member';
+import React, { cloneElement } from 'react';
 
 const Family = (props) => {
-    const first = 'John';
-    const second = 'Jane';
-    const third = 'Jim';
     return (
         <div>
-            <Member name={first} lastName={props.lastName} />
-            <Member name={second} {...props} />
-            <Member name={third} lastName={'Test'} />
+            {/* {React.Children.map(props.children, (child) => {
+                return cloneElement(child, { ...props });
+            })} */}
+            {props.children.map((child, i) => {
+                return cloneElement(child, { ...props, key: i });
+            })}
         </div>
     );
 };
