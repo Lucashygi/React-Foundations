@@ -15,6 +15,9 @@ import EvenOrOdd from './components/conditional/EvenOrOdd';
 import UserInfo from './components/conditional/UserInfo';
 import DirectParent from './components/comunication/DirectParent';
 import IndirectParent from './components/comunication/IndirectParent';
+import Input from './components/forms/input';
+import Counter from './components/counter/Counter';
+import MegaSena from './components/mega/Mega';
 
 export default function App(props) {
     return (
@@ -22,6 +25,15 @@ export default function App(props) {
             <h1>React Foundations</h1>
             <br />
             <div className="Cards">
+                <Card Title="#13 - Mega Sena" color="#FF4C65">
+                    <MegaSena />
+                </Card>
+                <Card Title="#12 - Counter" color="#FF4C65">
+                    <Counter initialNumber={10} />
+                </Card>
+                <Card Title="#11 - Controlled Component" color="#FF4C65">
+                    <Input />
+                </Card>
                 <Card Title="#10 - Indirect Communication" color="#8C4646">
                     <IndirectParent />
                 </Card>
